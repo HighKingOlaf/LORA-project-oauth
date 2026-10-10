@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How LORA.Project handles Google Drive data.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Privacy policy | LORA.Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="index.html">LORA<span>.</span>Project</a><nav class="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+<main class="wrap"><div class="eyebrow">Effective date: October 10, 2026</div>
+<h1>Privacy policy</h1>
+<p class="lead">This policy describes how LORA.Project, a privately operated personal backup utility, handles Google user data when authorized by its operator.</p>
+<h2>1. Operator and purpose</h2>
+<p>LORA.Project is a personal-use tool maintained by the GitHub account <a href="https://github.com/HighKingOlaf">HighKingOlaf</a>. It stores and verifies encrypted backups of a personal project-memory archive in Google Drive. This website is informational; it does not log in to Google, take uploads, or handle backup content.</p>
+<h2>2. Google data accessed</h2>
+<p>With explicit Google authorization, LORA.Project uses the Google Drive API <code>drive.file</code> scope to access Drive files created by the application or files the operator explicitly makes available to it. In this workflow, that includes encrypted backup objects and necessary metadata (such as file names, file IDs, sizes, and timestamps) for upload, listing, verification, download and recovery.</p>
+<p>The application does not request general access to all files in Google Drive through broader Drive scopes.</p>
+<h2>3. How data is used</h2>
+<ul><li>Create or retrieve encrypted project-memory backup objects, as directed by the operator.</li>
+<li>Check backup integrity and support local recovery testing.</li>
+<li>Maintain local operational logs containing backup status and limited file metadata.</li></ul>
+<p>Google user data is not used for advertising, profiling, or training AI models. The application does not sell Google user data.</p>
+<h2>4. Storage, encryption, and security</h2>
+<p>Project-memory contents are intended to be encrypted locally before upload. Google Drive stores the resulting encrypted backup objects; the operator's computer performs decryption for recovery. Google account authorization is handled through OAuth using locally stored rclone credentials. Such credentials must be protected using operating-system access controls and are not intended to be part of cloud backup objects or this website.</p>
+<p>Google Drive itself stores and processes the encrypted objects and associated metadata under the operator's Google account. Local restored files, downloaded ciphertext, reports, and OAuth configuration may remain on the operator's computer until the operator removes them. No security measure is guaranteed to eliminate all risk.</p>
+<h2>5. Sharing and transfers</h2>
+<p>Data is transferred to Google only as required for the Google Drive backup, verification, and recovery functions. The operator does not disclose Google user data to advertisers, data brokers, or other third parties. Disclosure may occur if legally required or with the operator's express direction. Google processes Drive data under its own terms and privacy policies.</p>
+<h2>6. Retention and deletion</h2>
+<p>Encrypted backups remain in the operator's Google Drive account until the operator deletes them or enables a separate retention policy. Local copies and logs may also remain until manually removed. The operator can review and delete backup objects in Google Drive, revoke application access through Google Account settings, and delete locally stored credentials or recovery copies.</p>
+<h2>7. Limited use</h2>
+<p>Any information obtained from Google APIs is used only for the functions described in this policy. It is not used for personalized advertising, sold, or provided to unrelated parties. Human access is not part of the normal automated workflow.</p>
+<h2>8. Website data</h2>
+<p>The informational site uses static HTML and CSS without embedded analytics scripts, advertising pixels, login forms, or tracking cookies supplied by LORA.Project. Its hosting provider, GitHub Pages, may process standard technical request information according to GitHub's own policies.</p>
+<h2>9. Updates and contact</h2>
+<p>If these practices change, this page will be updated with a new effective date. Questions may be submitted through <a href="https://github.com/HighKingOlaf/LORA-project-oauth/issues">the public project issue tracker</a>. Please do not post sensitive personal information in public issues.</p></main>
+<footer><div class="wrap"><p>© 2026 LORA.Project · Personal-use utility</p><p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></p></div></footer>
+</body>
+</html>
